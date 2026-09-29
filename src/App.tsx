@@ -21,7 +21,7 @@ const ProfilePage = lazy(() => import('./pages/ProfilePage'))
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ProfileProvider>
         <SavedProvider>
           <TripsProvider>
